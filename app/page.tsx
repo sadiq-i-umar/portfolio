@@ -87,7 +87,7 @@ export default function Home() {
             {
               screenshot: 'startup-nigeria.png',
               name: 'Startup Nigeria',
-              tools: ['Next.js', 'React', 'TypeScript', 'MUI'].join(' | '),
+              tools: ['Next.js', 'React', 'TypeScript', 'MUI'],
               description:
                 'The Startup Nigeria portal is an initiative of the Nigerian government to provide startups with a platform where they can expose themselves to opportunities in the startup ecosystem. It is a mutli user application with not only startups but also venture capitalists, angel investors, and A.I.Is (Accelerators, Innovation Hubs, and Incubators)',
               color: '#007A27',
@@ -97,7 +97,7 @@ export default function Home() {
             {
               screenshot: 'guards-polo-club.png',
               name: 'Abuja Guards Polo Club',
-              tools: ['PHP', 'Laravel', 'HTML', 'CSS'],
+              tools: ['PHP', 'Laravel', 'HTML', 'Tailwind CSS'],
               description: 'The member portal for Abuja Guards Polo Club..',
               color: '#394911',
               imageFirst: true,

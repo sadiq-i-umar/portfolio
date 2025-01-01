@@ -97,7 +97,7 @@ export default function Home() {
             {
               screenshot: 'guards-polo-club.png',
               name: 'Abuja Guards Polo Club',
-              tools: ['PHP', 'Laravel', 'HTML', 'CSS'].join(' | '),
+              tools: ['PHP', 'Laravel', 'HTML', 'CSS'],
               description: 'The member portal for Abuja Guards Polo Club..',
               color: '#394911',
               imageFirst: true,
@@ -106,7 +106,7 @@ export default function Home() {
             {
               screenshot: 'nibc.png',
               name: 'Nigeria India Business Council',
-              tools: ['WordPress', 'Elementor'].join(' | '),
+              tools: ['WordPress', 'Elementor'],
               description:
                 'The project involved the creation of a website for the Nigeria India Business Council using modern and interactive elements.',
               color: '#00A650',
@@ -116,7 +116,7 @@ export default function Home() {
             {
               screenshot: 'leadguards.png',
               name: 'Lead Guards Security',
-              tools: ['PHP', 'HTML', 'CSS'].join(' | '),
+              tools: ['PHP', 'HTML', 'CSS'],
               description:
                 'Website for Lead Guards Limited. The company provides security services to individuals and organizations.',
               color: '#D42300',
@@ -144,7 +144,10 @@ export default function Home() {
                 >
                   {project.name}
                 </p>
-                <p className='text-2xl font-bold'>{project.tools}</p>
+                <p className='text-2xl font-bold'>
+                  {typeof project.tools !== 'string' &&
+                    project.tools.join(' | ')}
+                </p>
                 <p className='text-1xl'>{project.description}</p>
                 <div className='flex justify-center'>
                   <Link href={'https://' + project.link} target='_blank'>
@@ -177,7 +180,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className='bg-[#F8F9FF] grid grid-cols-2 px-2 sm:px-[150px] py-20 items-center gap-10 sm:gap-5'>
+      <div className='bg-[#F8F9FF] grid grid-cols-2 px-2 sm:px-[150px] py-20 items-center gap-10 sm:gap-5 mb-[-15px]'>
         <div
           className='col-span-2 lg:col-span-1 place-self-center sm:mx-0 w-60 h-60 sm:w-120 sm:h-129 md:w-[370px] md:h-[374px]'
           style={{
@@ -201,6 +204,22 @@ export default function Home() {
           </p>
           <p className='text-2xl sm:text-3xl'>+234 70 6924 7868</p>
         </div>
+      </div>
+
+      <div className='border-t-4 border-[#2298BD] flex flex-col md:flex-row md:items-center justify-center py-4 font-bold text-center px-20 gap-2'>
+        <p>
+          Sadiq Ibrahim Umar &copy; 2025{' '}
+          <span className='hidden md:inline'>|</span>{' '}
+        </p>
+        <p>
+          <a
+            href={'https://github.com/sadiq-i-umar/portfolio'}
+            target='_blank'
+            className='underline underline-offset-4'
+          >
+            🔗Access the code on GitHub
+          </a>
+        </p>
       </div>
     </div>
   );

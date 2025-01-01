@@ -87,7 +87,7 @@ export default function Home() {
             {
               screenshot: 'startup-nigeria.png',
               name: 'Startup Nigeria',
-              tools: ['Next.js', 'React', 'TypeScript', 'MUI'],
+              tools: ['Next.js', 'React', 'TypeScript', 'Material UI'],
               description:
                 'The Startup Nigeria portal is an initiative of the Nigerian government to provide startups with a platform where they can expose themselves to opportunities in the startup ecosystem. It is a mutli user application with not only startups but also venture capitalists, angel investors, and A.I.Is (Accelerators, Innovation Hubs, and Incubators)',
               color: '#007A27',

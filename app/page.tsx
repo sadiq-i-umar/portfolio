@@ -162,13 +162,15 @@ export default function Home() {
         </div>
       </div>
 
-      <div className='flex flex-col items-center'>
-        <div className='grid grid-cols-2 mx-10 sm:mx-20 my-[150px] sm:my-40 gap-6 sm:gap-32 text-center sm:text-start'>
-          <div className='col-span-2 sm:col-span-1'>
+      <div className='flex justify-center'>
+        <div className='flex flex-col lg:flex-row items-center gap-16 md:gap-20 lg:gap-36 my-40 mx-20'>
+          <div className='w-[300px] h-[52px]  sm:w-[504px] sm:h-[103px] mt-[-30px]'>
             <img src='/icons/nile-university.svg' width={504} height={103} />
           </div>
-          <div className='flex flex-col gap-2 text-3xl sm:text-4xl font-bold col-span-2 sm:col-span-1'>
-            <p className='text-[#274193]'>Bsc. Software Engineering</p>
+          <div className='flex flex-col items-center sm:items-start gap-2 text-3xl sm:text-4xl font-bold w-fit'>
+            <p className='text-[#274193] text-center md:text-start'>
+              Bsc. Software Engineering
+            </p>
             <p>2018 - 2022</p>
             <p className='text-2xl font-normal'>First Class Honors</p>
           </div>

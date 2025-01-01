@@ -89,7 +89,7 @@ export default function Home() {
               name: 'Startup Nigeria',
               tools: ['Next.js', 'React', 'TypeScript', 'MUI'].join(' | '),
               description:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras posuere quis nibh id blandit. Integer ultrices massa eu ultricies vulputate. Pellentesque quis lorem gravida, tempus turpis in, dictum urna.',
+                'The Startup Nigeria portal is an initiative of the Nigerian government to provide startups with a platform where they can expose themselves to opportunities in the startup ecosystem. It is a mutli user application with not only startups but also venture capitalists, angel investors, and A.I.Is (Accelerators, Innovation Hubs, and Incubators)',
               color: '#007A27',
               imageFirst: false,
               link: 'startup.gov.ng',
@@ -98,8 +98,7 @@ export default function Home() {
               screenshot: 'guards-polo-club.png',
               name: 'Abuja Guards Polo Club',
               tools: ['PHP', 'Laravel', 'HTML', 'CSS'].join(' | '),
-              description:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras posuere quis nibh id blandit. Integer ultrices massa eu ultricies vulputate. Pellentesque quis lorem gravida, tempus turpis in, dictum urna.',
+              description: 'The member portal for Abuja Guards Polo Club..',
               color: '#394911',
               imageFirst: true,
               link: 'member.abujaguardspolo.com/login',
@@ -109,7 +108,7 @@ export default function Home() {
               name: 'Nigeria India Business Council',
               tools: ['WordPress', 'Elementor'].join(' | '),
               description:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras posuere quis nibh id blandit. Integer ultrices massa eu ultricies vulputate. Pellentesque quis lorem gravida, tempus turpis in, dictum urna.',
+                'The project involved the creation of a website for the Nigeria India Business Council using modern and interactive elements.',
               color: '#00A650',
               imageFirst: false,
               link: 'nibc.ng',
@@ -119,7 +118,7 @@ export default function Home() {
               name: 'Lead Guards Security',
               tools: ['PHP', 'HTML', 'CSS'].join(' | '),
               description:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras posuere quis nibh id blandit. Integer ultrices massa eu ultricies vulputate. Pellentesque quis lorem gravida, tempus turpis in, dictum urna.',
+                'Website for Lead Guards Limited. The company provides security services to individuals and organizations.',
               color: '#D42300',
               imageFirst: false,
               link: 'leadguards.ng',

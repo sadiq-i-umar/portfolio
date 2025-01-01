@@ -16,6 +16,19 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: 'Sadiq Ibrahim Umar - Software Engineer',
   description: 'Welcome to my portfolio site. Get to know me professionally',
+  creator: 'Sadiq Ibrahim  Umar',
+  openGraph: {
+    title: 'Sadiq Ibrahim Umar - Software Engineer',
+    description: 'Welcome to my portfolio site. Get to know me professionally',
+    images: [
+      {
+        url: '/icons/code-circle.svg',
+        width: 1200,
+        height: 630,
+        alt: 'Preview image description',
+      },
+    ],
+  },
 };
 
 export default function RootLayout({

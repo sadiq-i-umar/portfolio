@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description: 'Welcome to my portfolio site. Get to know me professionally',
     images: [
       {
-        url: 'https://sadiqumar.vercel.app/icons/code-circle.svg',
+        url: 'https://sadiqumar.vercel.app/profile/headshot.png',
         width: 1200,
         height: 630,
         alt: 'Preview image description',

@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Home() {
   return (
     <div className='flex flex-col gap-4'>
@@ -6,13 +8,20 @@ export default function Home() {
         <div className='flex-grow flex items-center sm:justify-end'>
           <div className='flex items-center gap-2'>
             <p>1+ years of experience</p>
-            {['github (1)', 'linkedin-original'].map((image, index) => (
-              <img
-                key={index}
-                src={'/icons/' + image + '.svg'}
-                width={24}
-                height={24}
-              />
+            {[
+              { image: 'github (1)', link: 'github.com/sadiq-i-umar' },
+              {
+                image: 'linkedin-original',
+                link: 'linkedin.com/in/sadiq-i-umar',
+              },
+            ].map((social, index) => (
+              <Link href={'https://' + social.link} key={index} target='_blank'>
+                <img
+                  src={'/icons/' + social.image + '.svg'}
+                  width={24}
+                  height={24}
+                />
+              </Link>
             ))}
           </div>
         </div>
@@ -83,6 +92,7 @@ export default function Home() {
                 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras posuere quis nibh id blandit. Integer ultrices massa eu ultricies vulputate. Pellentesque quis lorem gravida, tempus turpis in, dictum urna.',
               color: '#007A27',
               imageFirst: false,
+              link: 'startup.gov.ng',
             },
             {
               screenshot: 'guards-polo-club.png',
@@ -92,6 +102,7 @@ export default function Home() {
                 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras posuere quis nibh id blandit. Integer ultrices massa eu ultricies vulputate. Pellentesque quis lorem gravida, tempus turpis in, dictum urna.',
               color: '#394911',
               imageFirst: true,
+              link: 'member.abujaguardspolo.com/login',
             },
             {
               screenshot: 'nibc.png',
@@ -101,6 +112,7 @@ export default function Home() {
                 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras posuere quis nibh id blandit. Integer ultrices massa eu ultricies vulputate. Pellentesque quis lorem gravida, tempus turpis in, dictum urna.',
               color: '#00A650',
               imageFirst: false,
+              link: 'nibc.ng',
             },
             {
               screenshot: 'leadguards.png',
@@ -110,6 +122,7 @@ export default function Home() {
                 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras posuere quis nibh id blandit. Integer ultrices massa eu ultricies vulputate. Pellentesque quis lorem gravida, tempus turpis in, dictum urna.',
               color: '#D42300',
               imageFirst: false,
+              link: 'leadguards.ng',
             },
           ].map((project, index) => (
             <div
@@ -135,12 +148,14 @@ export default function Home() {
                 <p className='text-2xl font-bold'>{project.tools}</p>
                 <p className='text-1xl'>{project.description}</p>
                 <div className='flex justify-center'>
-                  <button
-                    style={{ backgroundColor: project.color }}
-                    className={`w-fit text-white rounded-xl text-1xl py-3 px-6 font-bold`}
-                  >
-                    View Project
-                  </button>
+                  <Link href={'https://' + project.link} target='_blank'>
+                    <button
+                      style={{ backgroundColor: project.color }}
+                      className={`w-fit text-white rounded-xl text-1xl py-3 px-6 font-bold`}
+                    >
+                      View Project
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>

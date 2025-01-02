@@ -123,6 +123,16 @@ export default function Home() {
               imageFirst: false,
               link: 'leadguards.ng',
             },
+            {
+              screenshot: 'portfolio.png',
+              name: 'Portfolio Site',
+              tools: ['Next JS', 'React', 'TypeScript', 'Tailwind CSS'],
+              description:
+                'Created to showcase my professional skills and experience. This is the website you are currently viewing.',
+              color: '#2298BD',
+              imageFirst: false,
+              link: 'sadiqumar.vercel.app',
+            },
           ].map((project, index) => (
             <div
               key={index}
@@ -149,16 +159,18 @@ export default function Home() {
                     project.tools.join(' | ')}
                 </p>
                 <p className='text-1xl'>{project.description}</p>
-                <div className='flex justify-center'>
-                  <Link href={'https://' + project.link} target='_blank'>
-                    <button
-                      style={{ backgroundColor: project.color }}
-                      className={`w-fit text-white rounded-xl text-1xl py-3 px-6 font-bold`}
-                    >
-                      View Project
-                    </button>
-                  </Link>
-                </div>
+                {index !== 4 && (
+                  <div className='flex justify-center'>
+                    <Link href={'https://' + project.link} target='_blank'>
+                      <button
+                        style={{ backgroundColor: project.color }}
+                        className={`w-fit text-white rounded-xl text-1xl py-3 px-6 font-bold`}
+                      >
+                        View Project
+                      </button>
+                    </Link>
+                  </div>
+                )}
               </div>
             </div>
           ))}
@@ -211,15 +223,27 @@ export default function Home() {
           Sadiq Ibrahim Umar &copy; 2025{' '}
           <span className='hidden md:inline'>|</span>{' '}
         </p>
-        <p>
-          <a
-            href={'https://github.com/sadiq-i-umar/portfolio'}
-            target='_blank'
-            className='underline underline-offset-4'
-          >
-            🔗Access the code on GitHub
-          </a>
-        </p>
+        {[
+          {
+            text: '🔗Access the code on GitHub',
+            link: 'https://github.com/sadiq-i-umar/portfolio',
+          },
+          {
+            text: '📄My Resume',
+            link: 'https://drive.google.com/file/d/1covwa-WM2vs2zpldo88lEfxJF1XdLh-A/view?usp=drive_link',
+          },
+        ].map((item, index) => (
+          <p key={index}>
+            <a
+              href={item.link}
+              target='_blank'
+              className='underline underline-offset-4'
+            >
+              {item.text}
+            </a>
+            {index !== 1 && <span className='hidden md:inline'> |</span>}
+          </p>
+        ))}
       </div>
     </div>
   );

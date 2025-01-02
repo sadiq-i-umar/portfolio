@@ -233,7 +233,7 @@ export default function Home() {
             link: 'https://drive.google.com/file/d/1covwa-WM2vs2zpldo88lEfxJF1XdLh-A/view?usp=drive_link',
           },
         ].map((item, index) => (
-          <p key={index}>
+          <p {...(index === 0 && { className: 'mt-[-4px]' })} key={index}>
             <a
               href={item.link}
               target='_blank'

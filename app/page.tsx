@@ -7,7 +7,7 @@ export default function Home() {
         <p>✨ Welcome! Get to know me professionally</p>
         <div className='flex-grow flex items-center sm:justify-end'>
           <div className='flex items-center gap-2'>
-            <p>1+ years of experience</p>
+            <p>2+ years of experience</p>
             {[
               { image: 'github (1)', link: 'github.com/sadiq-i-umar' },
               {

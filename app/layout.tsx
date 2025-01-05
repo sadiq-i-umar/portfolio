@@ -14,7 +14,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: 'Sadiq Ibrahim Umar - Software Engineer',
+  title: 'Sadiq Ibrahim Umar - Software Engineer | Web Developer',
   description: 'Welcome to my portfolio site. Get to know me professionally',
   creator: 'Sadiq Ibrahim  Umar',
   openGraph: {
